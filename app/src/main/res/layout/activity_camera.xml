@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camera"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:padding="30dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/ID_Immage"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+
+        android:src="@drawable/ic_launcher"
+
+
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ID_signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable= "true"
+        android:focusableInTouchMode= "true"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        >
+        <android.support.design.widget.TextInputEditText
+
+            android:id="@+id/ID_User_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:ems= "10"
+            android:inputType="text"
+            android:textSize="20sp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ID_signnup_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable= "true"
+        android:focusableInTouchMode= "true"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ID_Email"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:ems= "10"
+            android:inputType="text"
+            android:textSize="20sp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+
+
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/button_rounded"
+android:id="@+id/ID_click"
+
+        android:layout_above="@+id/ID_Submit"
+        android:text="Click" />
+
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+
+
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/button_rounded"
+android:text="submit"
+        android:id="@+id/ID_Submit"/>
+</LinearLayout>
